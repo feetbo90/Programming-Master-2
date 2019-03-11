@@ -46,7 +46,11 @@ fun main(args: Array<String>) {
     nilai2 = input.nextInt()
 
     var hasil = nilai + nilai2
-
+    var kurang = nilai - nilai2
+    var kali = nilai * nilai2
+    var bagi = nilai.toDouble() / nilai2.toDouble()
     println("Hasil jumlah : "+ hasil)
-
+    println("Hasil kurang : $kurang")
+    println("Hasil bagi : $bagi")
+    println("Hasil kali : $kali")
 }
