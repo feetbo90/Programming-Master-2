@@ -45,9 +45,9 @@ import java.util.*
 
 fun main(args: Array<String>) {
 
-    var bilangan : Int?
-    var bilangan2 : Int?
-    var bilangan3 : Int?
+    var bilangan : Int? = null
+    var bilangan2 : Int? = null
+    var bilangan3 : Int? = null
 //    var input = readLine()
     println("Masukkan bilangan pertama ")
     bilangan = readLine()!!.toInt()
@@ -79,3 +79,19 @@ fun main(args: Array<String>) {
 
 
 }
+
+/*
+
+    100
+    100
+    100
+    100
+
+    400 / 4 = 100
+
+    nilai > 90 A
+    nilai > 80 s/d nilai <= 90
+    B+
+
+
+ */
