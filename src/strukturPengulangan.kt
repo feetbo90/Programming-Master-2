@@ -23,6 +23,27 @@ fun main(args: Array<String>) {
     {
         println(hasil)
     }
+
+    var bilangan : Int
+
+    println("Masukkan bilangan ")
+    bilangan = readLine()!!.toInt()
+    var jumlah = 0
+    for (i in 1 .. bilangan)
+    {
+        var nilai = readLine()!!.toInt()
+        jumlah = jumlah + nilai
+
+    }
+
+    var rata = jumlah.toDouble() / bilangan.toDouble()
+    println("nilai rata - rata $rata")
+
+    if (rata > 90)
+    {
+        println("A")
+    }else if(rata > 80 && rata <= 90)
+        println("B+")
 }
 
 /*
