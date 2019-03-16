@@ -51,6 +51,6 @@ fun main(args: Array<String>) {
     var bagi = nilai.toDouble() / nilai2.toDouble()
     println("Hasil jumlah : "+ hasil)
     println("Hasil kurang : $kurang")
-    println("Hasil bagi : $bagi")
+    println("Hasil $hasil bagi : $bagi")
     println("Hasil kali : $kali")
 }
