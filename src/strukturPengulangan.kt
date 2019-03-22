@@ -31,6 +31,7 @@ fun main(args: Array<String>) {
     var jumlah = 0
     for (i in 1 .. bilangan)
     {
+        println("Masukkan bilangan yang ke $i")
         var nilai = readLine()!!.toInt()
         jumlah = jumlah + nilai
 
