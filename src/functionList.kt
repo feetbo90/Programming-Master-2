@@ -19,3 +19,19 @@ fun printFunction(list: List<Int>){
         println(" Hasil input index ke $i : ${list.get(i)}")
     }
 }
+
+/*
+    input : 3
+
+    0   1   2
+    100 100 100
+
+    input index 0 : 100
+    input index 1 : 100
+    input index 2 : 100
+
+    300.toDouble() / list.size.toDouble()
+
+    nilai > 90
+    A
+ */
