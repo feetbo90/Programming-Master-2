@@ -7,6 +7,9 @@ fun inputList(input : Int) : List<Int>{
         nilai = readLine()!!.toInt()
         list.add(nilai)
     }
+    //println("ini manggil fungsi di dalam fungsi")
+    //printFunction(list)
+
     return list
 }
 
