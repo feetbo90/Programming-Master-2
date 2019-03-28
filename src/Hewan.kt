@@ -22,6 +22,10 @@ open class Hewan(kaki: Int) {
 
     open val x: Int get() = 1
 
+    open fun getNilai(): Int {
+        return this.kaki
+    }
+
     open fun bernapas() {
         println(" Hewan bernapas ")
     }

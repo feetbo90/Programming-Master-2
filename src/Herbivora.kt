@@ -21,6 +21,10 @@ open class Herbivora(kaki: Int, warna: String) : Hewan(kaki, warna) {
 
     override val x: Int get() = super.x + 1
 
+    override fun getNilai(): Int {
+        return super.getNilai() + 4
+    }
+
     override fun bernapas() {
         println("Ini bernapas dari herbivora")
     }
@@ -36,7 +40,7 @@ fun main(args: Array<String>) {
     println("$sapi.bernapas()")
     sapi.bergerak()
     sapi.bernapasHerbivora()
-    println("${sapi.kaki}")
+    println("${sapi.getNilai()}")
 
 }
 
