@@ -1,8 +1,9 @@
-class Herbivora(kaki: Int, warna: String) : Hewan(kaki, warna) {
+open class Herbivora(kaki: Int, warna: String) : Hewan(kaki, warna) {
 
-
+    var nama : String = ""
     constructor(kaki: Int, warna: String, nama: String) :this(kaki, warna){
         println("ini dari secondary turunan")
+        this.nama = nama
     }
 
     init {
@@ -20,23 +21,18 @@ class Herbivora(kaki: Int, warna: String) : Hewan(kaki, warna) {
 
     override val x: Int get() = super.x + 1
 
-    override
-    open fun bernapas(): String {
-        val nilai = super.bernapas()
+    override fun bernapas() {
         println("Ini bernapas dari herbivora")
-        return nilai
     }
 
-    override
-    open fun bernapas(kaki : Int) {
-
+    override fun bernapas(kaki : Int) {
     }
 }
 
 
 fun main(args: Array<String>) {
 
-    var sapi = Herbivora(4, "Coklat", "budi")
+    val sapi = Herbivora(4, "Coklat", "budi")
     println("$sapi.bernapas()")
     sapi.bergerak()
     sapi.bernapasHerbivora()

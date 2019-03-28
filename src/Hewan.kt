@@ -1,15 +1,16 @@
 open class Hewan(kaki: Int) {
 
+    var kaki : Int = 0
+    private var warna : String = ""
+
     init {
         println(" ini dari primary induk ")
     }
 
     constructor(kaki: Int, warna: String) : this(kaki) {
         println(" ini dari secondary induk")
+        this.warna = warna
     }
-
-    var kaki : Int = 0
-    val warna : String = ""
 
     init {
         this.kaki = kaki
@@ -21,18 +22,13 @@ open class Hewan(kaki: Int) {
 
     open val x: Int get() = 1
 
-    open fun bernapas():String {
+    open fun bernapas() {
         println(" Hewan bernapas ")
-        return "Hewan bernapas"
     }
 
     open fun bernapas(kaki : Int) {
 
     }
-
-    /*fun getKaki() : Int{
-        return this.kaki
-    }*/
 
     fun bergerak() {
         println(" Hewan Bergerak")
